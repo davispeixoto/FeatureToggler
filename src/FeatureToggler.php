@@ -14,7 +14,7 @@ use Noodlehaus\Config;
 class FeatureToggler
 {
     /**
-     * @var array|string The path to config file
+     * @var Config The config object
      */
     private $config;
 
