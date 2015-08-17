@@ -16,7 +16,8 @@
     }
   ],
   "require": {
-    "php": ">=5.4.0"
+    "php": ">=5.4.0",
+    "hassankhan/config": "*"
   },
   "require-dev": {
     "phpunit/phpunit": "~4.0"
