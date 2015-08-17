@@ -8,24 +8,30 @@
 
 namespace Davispeixoto\FeatureToggler;
 
+use Exception;
 use Noodlehaus\Config;
 
 class FeatureToggler
 {
     /**
-     * @var array $config
+     * @var array|string The path to config file
      */
     private $config;
 
     public function __construct($configFile)
     {
-        if (is_readable($configFile)) {
+        try {
             $this->config = Config::load($configFile);
-        } else {
-            throw new FeatureTogglerException('Config file does not exists, or cannot be read');
+        } catch (Exception $e) {
+            throw new FeatureTogglerException($e->getMessage());
         }
     }
 
+    /**
+     * @param string $key
+     * @param bool|false $defaultValue
+     * @return array|mixed|null
+     */
     public function isEnabled($key, $defaultValue = false)
     {
         return $this->config->get($key, $defaultValue);

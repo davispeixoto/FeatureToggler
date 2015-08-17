@@ -2,13 +2,11 @@
 
 This package provides a simple feature toggle mechanism for PHP applications.
 
-[![Latest Stable Version](https://img.shields.io/packagist/v/davispeixoto/laravel5-salesforce.svg)](https://packagist.org/packages/davispeixoto/laravel5-salesforce)
-[![Total Downloads](https://img.shields.io/packagist/dt/davispeixoto/laravel5-salesforce.svg)](https://packagist.org/packages/davispeixoto/laravel5-salesforce)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/davispeixoto/Laravel-5-Salesforce/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/davispeixoto/Laravel-5-Salesforce/?branch=master)
-[![Codacy Badge](https://www.codacy.com/project/badge/bf551ce90c34492ca54c4748234a72ca)](https://www.codacy.com/app/davis-peixoto/Laravel-5-Salesforce)
-[![Code Climate](https://codeclimate.com/github/davispeixoto/Laravel-5-Salesforce/badges/gpa.svg)](https://codeclimate.com/github/davispeixoto/Laravel-5-Salesforce)
-[![Build Status](https://travis-ci.org/davispeixoto/Laravel-5-Salesforce.svg)](https://travis-ci.org/davispeixoto/Laravel-5-Salesforce)
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/004992d1-90a7-4bd6-9dae-2d8b541386ae/small.png)](https://insight.sensiolabs.com/projects/004992d1-90a7-4bd6-9dae-2d8b541386ae)
+[![Latest Stable Version](https://img.shields.io/packagist/v/davispeixoto/featuretoggle.svg)](https://packagist.org/packages/davispeixoto/featuretoggle)
+[![Total Downloads](https://img.shields.io/packagist/dt/davispeixoto/featuretoggle.svg)](https://packagist.org/packages/davispeixoto/featuretoggle)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/davispeixoto/FeatureToggler/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/davispeixoto/FeatureToggler/?branch=master)
+[![Build Status](https://travis-ci.org/davispeixoto/FeatureToggler.svg)](https://travis-ci.org/davispeixoto/FeatureToggler)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/eda8ae67-d805-4436-838a-fdf40c7e7088/big.png)](https://insight.sensiolabs.com/projects/eda8ae67-d805-4436-838a-fdf40c7e7088)
 
 ## Installation
 
