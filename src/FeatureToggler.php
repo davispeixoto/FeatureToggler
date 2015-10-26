@@ -29,7 +29,7 @@ class FeatureToggler
 
     /**
      * @param string $key
-     * @param bool|false $defaultValue
+     * @param bool|string $defaultValue
      * @return array|mixed|null
      */
     public function isEnabled($key, $defaultValue = false)
