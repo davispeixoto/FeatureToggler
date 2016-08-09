@@ -86,5 +86,5 @@ who kindly empower this project with a free open-source license for [PhpStorm](h
   [1]: https://www.jetbrains.com/
   [2]: https://www.jetbrains.com/company/docs/logo_jetbrains.png
   [3]: https://www.jetbrains.com/phpstorm/
-  [4]: https://www.jetbrains.com/phpstorm/documentation/docs/logo_phpstorm.png
+  [4]: https://d3nmt5vlzunoa1.cloudfront.net/phpstorm/files/2015/12/PhpStorm_400x400_Twitter_logo_white.png
 

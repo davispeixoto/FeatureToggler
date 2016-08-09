@@ -24,7 +24,8 @@
   },
   "autoload": {
     "psr-4": {
-      "Davispeixoto\\FeatureToggler\\": "src/"
+      "Davispeixoto\\FeatureToggler\\": "src/",
+      "Davispeixoto\\FeatureToggler\\Tests\\": "tests/"
     }
   },
   "minimum-stability": "stable"
