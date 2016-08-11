@@ -120,7 +120,18 @@ class FeatureTogglerTest extends PHPUnit_Framework_TestCase
             ['xptoFeat', TRUE, TRUE],
             ['feature1.a', TRUE, TRUE],
             ['xptoFeat', FALSE, FALSE],
-            ['feature1.a', FALSE, FALSE]
+            ['feature1.a', FALSE, FALSE],
+            ['xptoFeat', 1, TRUE],
+            ['feature1.a', -1, TRUE],
+            ['xptoFeat', 0, FALSE],
+            ['feature1.a', '', FALSE],
+            ['xptoFeat', NULL, FALSE],
+            ['feature1.a', 'foo', TRUE],
+            ['xptoFeat', '0.00', TRUE],
+            ['feature1.a', [], FALSE],
+            ['xptoFeat', [0], TRUE],
+            ['feature1.a', 'false', TRUE],
+            ['xptoFeat', 0.00, FALSE]
         ];
     }
 }

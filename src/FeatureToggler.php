@@ -30,7 +30,7 @@ class FeatureToggler
     /**
      * @param string $key
      * @param bool|string $defaultValue
-     * @return array|mixed|null
+     * @return boolean
      */
     public function isEnabled($key, $defaultValue = false)
     {
@@ -38,10 +38,10 @@ class FeatureToggler
             if ($this->config->has($key)) {
                 return (bool)$this->config->get($key, $defaultValue);
             } else {
-                return $defaultValue;
+                return (bool)$defaultValue;
             }
         } catch (Exception $e) {
-            return $defaultValue;
+            return (bool)$defaultValue;
         }
     }
 }
