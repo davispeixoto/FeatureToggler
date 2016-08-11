@@ -1,0 +1,67 @@
+Tests Design,,,,,,,
+Scenario ID,feature,value,default value,expected,comments,,
+1,exists,boolean,empty,value,,,
+2,exists,boolean,boolean,value,,,
+4,non-exists,N/A,empty,FALSE,,,
+5,non-exists,N/A,boolean,default value,,,
+,,,,,,,
+Tests Mass Implementation,,,,,,,
+Scenario ID,feature,value,default,expected,comments,,
+1,feature1,TRUE,empty,TRUE,,,"""feature1""TRUE,"
+1,feature2,FALSE,empty,FALSE,,,"""feature2"" => FALSE,"
+1,feature3,1,empty,TRUE,,,"""feature3"" => 1,"
+1,feature4,-1,empty,TRUE,,,"""feature4"" => -1,"
+1,feature5,0,empty,FALSE,,,"""feature5"" => 0,"
+1,feature6,"""""",empty,FALSE,,,"""feature6"" => """","
+1,feature7,NULL,empty,FALSE,,,"""feature7"" => NULL,"
+1,feature8,"""foo""",empty,TRUE,,,"""feature8"" => ""foo"","
+1,feature9,"""0.00""",empty,TRUE,,,"""feature9"" => ""0.00"","
+1,feature10,[],empty,FALSE,,,"""feature10"" => [],"
+1,feature11,[0],empty,TRUE,,,"""feature11"" => [0],"
+1,feature12,"""false""",empty,TRUE,,,"""feature12"" => ""false"","
+1,feature13,"(float) ""0.00""",empty,FALSE,,,"""feature13"" => (float) ""0.00"","
+1,feature14.a,TRUE,empty,TRUE,,,"""feature14.a"" => TRUE,"
+1,feature14.b,FALSE,empty,FALSE,,,"""feature14.b"" => FALSE,"
+1,feature14.c,1,empty,TRUE,,,"""feature14.c"" => 1,"
+1,feature14.d,-1,empty,TRUE,,,"""feature14.d"" => -1,"
+1,feature14.e,0,empty,FALSE,,,"""feature14.e"" => 0,"
+1,feature14.f,"""""",empty,FALSE,,,"""feature14.f"" => """","
+1,feature14.g,NULL,empty,FALSE,,,"""feature14.g"" => NULL,"
+1,feature14.h,"""foo""",empty,TRUE,,,"""feature14.h"" => ""foo"","
+1,feature14.i,"""0.00""",empty,TRUE,,,"""feature14.i"" => ""0.00"","
+1,feature14.j,[],empty,FALSE,,,"""feature14.j"" => [],"
+1,feature14.k,[0],empty,TRUE,,,"""feature14.k"" => [0],"
+1,feature14.l,"""false""",empty,TRUE,,,"""feature14.l"" => ""false"","
+1,feature14.m,"(float) ""0.00""",empty,FALSE,,,"""feature14.m"" => (float) ""0.00"","
+2,feature1,TRUE,FALSE,TRUE,,,
+2,feature2,FALSE,TRUE,FALSE,,,
+2,feature3,1,FALSE,TRUE,,,
+2,feature4,-1,FALSE,TRUE,,,
+2,feature5,0,TRUE,FALSE,,,
+2,feature6,"""""",TRUE,FALSE,,,
+2,feature7,NULL,TRUE,FALSE,,,
+2,feature8,"""foo""",FALSE,TRUE,,,
+2,feature9,"""0.00""",FALSE,TRUE,,,
+2,feature10,[],TRUE,FALSE,,,
+2,feature11,[0],FALSE,TRUE,,,
+2,feature12,"""false""",FALSE,TRUE,,,
+2,feature13,"(float) ""0.00""",TRUE,FALSE,,,
+2,feature14.a,TRUE,FALSE,TRUE,,,
+2,feature14.b,FALSE,TRUE,FALSE,,,
+2,feature14.c,1,FALSE,TRUE,,,
+2,feature14.d,-1,FALSE,TRUE,,,
+2,feature14.e,0,TRUE,FALSE,,,
+2,feature14.f,"""""",TRUE,FALSE,,,
+2,feature14.g,NULL,TRUE,FALSE,,,
+2,feature14.h,"""foo""",FALSE,TRUE,,,
+2,feature14.i,"""0.00""",FALSE,TRUE,,,
+2,feature14.j,[],TRUE,FALSE,,,
+2,feature14.k,[0],FALSE,TRUE,,,
+2,feature14.l,"""false""",FALSE,TRUE,,,
+2,feature14.m,"(float) ""0.00""",TRUE,FALSE,,,
+3,xptoFeat,,empty,FALSE,,,
+3,feature1.a,,empty,FALSE,,,
+3,xptoFeat,,TRUE,TRUE,,,
+3,feature1.a,,TRUE,TRUE,,,
+3,xptoFeat,,FALSE,FALSE,,,
+3,feature1.a,,FALSE,FALSE,,,

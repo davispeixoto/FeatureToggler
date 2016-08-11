@@ -34,15 +34,14 @@ class FeatureToggler
      */
     public function isEnabled($key, $defaultValue = false)
     {
-        
-        $config = $this->config->get($key, $defaultValue);
-
-        if (is_array($config) && $config !== $defaultValue) {
-            if (array_key_exists($defaultValue, $config)) {
-                return $config[$defaultValue];
+        try {
+            if ($this->config->has($key)) {
+                return (bool)$this->config->get($key, $defaultValue);
+            } else {
+                return $defaultValue;
             }
-            return false;
+        } catch (Exception $e) {
+            return $defaultValue;
         }
-        return $config;
     }
 }
