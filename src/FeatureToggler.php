@@ -36,12 +36,12 @@ class FeatureToggler
     {
         try {
             if ($this->config->has($key)) {
-                return (bool)$this->config->get($key, $defaultValue);
+                return (bool) $this->config->get($key, $defaultValue);
             } else {
-                return (bool)$defaultValue;
+                return (bool) $defaultValue;
             }
         } catch (Exception $e) {
-            return (bool)$defaultValue;
+            return (bool) $defaultValue;
         }
     }
 }

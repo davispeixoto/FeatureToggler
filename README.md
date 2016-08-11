@@ -5,6 +5,7 @@ This package provides a simple feature toggle mechanism for PHP applications.
 [![Latest Stable Version](https://img.shields.io/packagist/v/davispeixoto/featuretoggle.svg)](https://packagist.org/packages/davispeixoto/featuretoggle)
 [![Total Downloads](https://img.shields.io/packagist/dt/davispeixoto/featuretoggle.svg)](https://packagist.org/packages/davispeixoto/featuretoggle)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/davispeixoto/FeatureToggler/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/davispeixoto/FeatureToggler/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/davispeixoto/FeatureToggler/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/davispeixoto/FeatureToggler/?branch=master)
 [![Build Status](https://travis-ci.org/davispeixoto/FeatureToggler.svg)](https://travis-ci.org/davispeixoto/FeatureToggler)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/eda8ae67-d805-4436-838a-fdf40c7e7088/big.png)](https://insight.sensiolabs.com/projects/eda8ae67-d805-4436-838a-fdf40c7e7088)
 
@@ -59,7 +60,7 @@ That's it! You're all set to go. Just use:
 
     ...
     // for multidimensional config array
-    if($toggler->isEnabled('my_other_feature', 'en_us')) {
+    if($toggler->isEnabled('my_other_feature.en_us')) {
         // new code here
     } else {
         // old code here
